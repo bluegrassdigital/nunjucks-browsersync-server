@@ -36,7 +36,7 @@ Start a nunjucks-browsersync-server instance
 
 **Example**  
 ```js
-// Imagine a directory structure// - assets// - html// -- pages// --- page-1.njk// -- layouts// -- partials// -- data.jsonvar server = require('nunjucks-browsersync-server')server.start({  staticPath: './assets',  browsersync: {    files: ['./assets/**', './html/**']  },  nunjucks: {    root: './html',    pages: 'pages',    globals: require('../nunjucks'),    data: require('./html/data.json')  }})// Now you can go to localhost:8020/pages/page-1.html and it will render the nunjucks page at './html/pages/page-1.njk' on the fly
+// Imagine a directory structure// - assets// - html// -- pages// --- page-1.njk// -- layouts// -- partials// -- data.jsonvar server = require('nunjucks-browsersync-server')server.start({  staticPath: './assets',  browsersync: {    files: ['./assets/**', './html/**']  },  nunjucks: {    root: './html',    renderPath: 'pages',    globals: require('../nunjucks'),    data: require('./html/data.json')  }})// Now you can go to localhost:8020/pages/page-1.html and it will render the nunjucks page at './html/pages/page-1.njk' on the fly
 ```
 
 ## Contributing to nunjucks-browsersync-server

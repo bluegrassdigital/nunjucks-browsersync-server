@@ -60,7 +60,7 @@ const defaultConfig = {
  *   },
  *   nunjucks: {
  *     root: './html',
- *     pages: 'pages',
+ *     renderPath: 'pages',
  *     globals: require('../nunjucks'),
  *     data: require('./html/data.json')
  *   }
