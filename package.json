@@ -1,0 +1,52 @@
+{
+  "name": "nunjucks-browsersync-server",
+  "version": "1.0.0",
+  "description": "Easily create and configure a browser-sync + nunjucks server for serving static pages on the fly during template development",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "docs": "jsdoc2md --template README.source.md index.es6.js > README.md"
+  },
+  "author": {
+    "name": "Simon Buerger",
+    "url": "https://github.com/simonbuerger"
+  },
+  "license": "MIT",
+  "issues": "http://github.com/bluegrassdigital/nunjucks-browsersync-server/issues",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bluegrassdigital/nunjucks-browsersync-server.git"
+  },
+  "keywords": [
+    "browser-sync",
+    "nunjucks",
+    "express",
+    "templates",
+    "server"
+  ],
+  "dependencies": {
+    "browser-sync": "^2.17.5",
+    "colors": "^1.1.2",
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "glob": "^7.1.1",
+    "nunjucks": "^2.5.2",
+    "on-headers": "^1.0.1",
+    "path": "^0.12.7",
+    "portfinder": "^1.0.9",
+    "yargs": "^6.3.0"
+  },
+  "devDependencies": {
+    "babel-plugin-remove-comments": "^2.0.0",
+    "babel-plugin-transform-runtime": "^6.12.0",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-es2015-loose": "^7.0.0",
+    "babel-preset-stage-2": "^6.13.0",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-insert": "^0.5.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-standard": "^8.0.2",
+    "jsdoc-to-markdown": "^2.0.1"
+  }
+}
