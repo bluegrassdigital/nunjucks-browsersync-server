@@ -15,6 +15,7 @@ const nunjuckDefaults = {
   globals: {},
   extension: 'njk',
   configureEnv: () => true,
+  setupEnv: () => true,
   data: () => {}
 }
 
@@ -90,6 +91,7 @@ export const start = (config = {}) => {
   })
 
   config.nunjucks.configureEnv(env)
+  config.nunjucks.setupEnv(env)
 
   app.use((req, res, next) => {
     for (let item in config.nunjucks.globals) {

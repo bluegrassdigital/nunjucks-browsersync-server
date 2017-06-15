@@ -35,6 +35,9 @@ var nunjuckDefaults = {
   configureEnv: function configureEnv() {
     return true;
   },
+  setupEnv: function setupEnv() {
+    return true;
+  },
   data: function data() {}
 };
 
@@ -67,6 +70,7 @@ var start = exports.start = function start() {
   });
 
   config.nunjucks.configureEnv(env);
+  config.nunjucks.setupEnv(env);
 
   app.use(function (req, res, next) {
     for (var item in config.nunjucks.globals) {

@@ -1,6 +1,6 @@
 {
   "name": "nunjucks-browsersync-server",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Easily create and configure a browser-sync + nunjucks server for serving static pages on the fly during template development",
   "main": "index.js",
   "scripts": {
@@ -24,13 +24,15 @@
     "templates",
     "server"
   ],
+  "peerDependencies": {
+    "nunjucks": ">= 2"
+  },
   "dependencies": {
     "browser-sync": "^2.17.5",
     "colors": "^1.1.2",
     "compression": "^1.6.2",
     "express": "^4.14.0",
     "glob": "^7.1.1",
-    "nunjucks": "^2.5.2",
     "on-headers": "^1.0.1",
     "path": "^0.12.7",
     "portfinder": "^1.0.9",
